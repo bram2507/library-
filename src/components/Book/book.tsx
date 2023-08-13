@@ -7,14 +7,14 @@ const Book = (props:Books) => {
                 <div>
                     <img src={props.cover} />
                 </div>
-                {/* <div>
+                
                     <ol>
                         <li>{props.pages}</li>
                         <li>{props.genre}</li> 
                         <li>{props.year}</li> 
                         <li>{props.ISBN}</li>
                     </ol>
-                </div> */}
+                
             </section>
            
     );

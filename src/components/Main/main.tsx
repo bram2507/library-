@@ -6,30 +6,37 @@ import Book from '../Book/book';
 import bookItem from './../Book/BookItem.module.css';
 import Header from '../Header/header';
 
+
 const body = ():ReactElement => {
   
    return(
       <body className={main.settings}>
-         <Header name="Nathan" age={27} occupation="Software Developer" />
+
+         {/* <Header name="Nathan" age={27} occupation="Software Developer" />
          <div className={main.booksGrid}>
          <section className={bookItem.booksCardsList}>
-            {displayBooksList()};
+            {{displayBooksList()}; }
+     
          </section>
            
-         </div>
+         </div> */}
+
+       
         
       </body>
+      
+      
    );
 }; 
 
-const displayBooksList = () =>{
-   return(
-      LIBRARY.map( (library) => {
-         return (
-             <Book {...library.book} />
-         )
-       })
-   );
-}
+// const displayBooksList = () =>{
+//    return(
+//       LIBRARY.map( (library) => {
+//          return (
+//              <Book {...library.book} />
+//          )
+//        })
+//    );
+// }
 
 export default body;
