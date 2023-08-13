@@ -1,0 +1,10 @@
+.settings,body,html{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: lightgray;
+    width: 100%;
+    min-height: 100vh;
+    
+}
+
