@@ -1,6 +1,7 @@
 import LIBRARY from "../../constants/constats";
 import main from "./Main.module.css";
 import Book from "../Book/book";
+import Header from "../Header/header";
 
 /**
  * The `body` function returns a JSX element representing the body of a web page,
@@ -15,7 +16,7 @@ import Book from "../Book/book";
 const body = () => {
   return (
     <body className={main.settings}>
-      {/* <Header name="Nathan" age={27} occupation="Software Developer" /> */}
+      <Header name="Nathan" age={27} occupation="Software Developer" />
       <div className={main.booksSection}>{displayBooksList()}</div>
     </body>
   );

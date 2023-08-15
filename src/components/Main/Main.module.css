@@ -1,21 +1,26 @@
 .settings,
+/* The CSS code `body, html` is selecting both the `body` and `html` elements in
+the HTML document. */
 body,
 html {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: lightgray;
+  background-color: red;
   width: 100%;
   min-height: 100vh;
 }
 
+/* The CSS code `.booksSection` is defining the styles for an element with the
+class name "booksSection". */
 .booksSection {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
   min-height: 10vh;
-  background-color: beige;
+  padding: 2vh;
+  background-color: lightgray;
 }
 
 .booksCards {
