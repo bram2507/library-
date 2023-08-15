@@ -45,7 +45,9 @@ const skeletonCardCustom = (
 ): ReactElement => {
   return (
     <Card
-      className={getClass(width, height, space_y, padding) + getRadius(radius)}
+      className={
+        getClass(width, height, space_y, padding) + space() + getRadius(radius)
+      }
     >
       {skeletonImgSection()}
       {skeletonPropsSetion()}
@@ -74,7 +76,7 @@ const getClass = (
   height: string,
   space_y: string,
   padding: string
-) => {
+): string => {
   return (
     `${width}` + ` ` + `${height}` + ` ` + `${space_y}` + ` ` + `${padding}`
   );
@@ -86,8 +88,13 @@ const getClass = (
  * @returns a string that concatenates the word "radius", the equal sign "=", and
  * the value of the input parameter "radius".
  */
-const getRadius = (radius: string) => {
-  return "radius" + "=" + `${radius}`;
+const getRadius = (radius: string): string => {
+  const stringRadius = "radius" + "=" + `${radius}`;
+  return stringRadius;
+};
+
+const space = (): string => {
+  return " ";
 };
 
 /**
