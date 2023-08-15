@@ -2,10 +2,22 @@
 import { ReactElement } from "react";
 import Books from "../../interfaces/books";
 import { Card, Skeleton } from "@nextui-org/react";
-const Book = (props: Books) => {
+
+/**
+ * The function `Book` returns a custom skeleton card component for a book.
+ * @param {Books} props - The `props` parameter is an object that contains the
+ * properties of the `Books` component. These properties can be accessed using dot
+ * notation, for example `props.title` or `props.author`.
+ * @returns a custom skeleton card component from the Next.js UI library.
+ */
+const Book = (props: Books): ReactElement => {
   return customSkeletonCardNextUI();
 };
 
+/**
+ * The function returns a custom skeleton card component with specific styling.
+ * @returns a React element.
+ */
 const customSkeletonCardNextUI = (): ReactElement => {
   return skeletonCardCustom("w-[200px]", "h-[220px", "space-y-5", "p-4", "lg");
 };
